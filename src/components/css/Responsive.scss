@@ -1,0 +1,26 @@
+// =========================Responsive scss Implement of the document 👍
+@media (max-width :991px) {
+    #banner h2 {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    #banner p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    #banner {
+        height: 130vh;
+        a {
+            margin: 50px !important;
+        }
+    }
+    #footer {
+        p {
+            margin-top: 50px;
+        }
+    }
+}
+
+// =========================end  of Responsive scss Implement of the document 👍

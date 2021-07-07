@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+#header {
+    overflow: hidden;
+    .navbar {
+        a {
+            text-transform: uppercase;
+            color: #ddd;
+        }
+        a:hover {
+            color: #1fbbe6;
+        }
+        .fas.fa-bars {
+            font-size: 28px;
+            color: #ddd;
+        }
+        button:focus:not(:focus-visible) {
+            outline: 0;
+            box-shadow: none !important;
+        }
+        .activeMenu {
+            color: #fff;
+            font-weight: bold;
+            border-bottom: 1px solid #1fbbe6;
+        }
+    }
+}
+
+#banner {
+    height: 80vh;
+    overflow: hidden;
+    h2 {
+        font-weight: bold;
+        font-size: 34px;
+        strong.react {
+            color: #1da5ca;
+        }
+    }
+    p {
+        font-size: 24px;
+    }
+    a.btn.btn-primary {
+        font-size: 20px;
+        color: #1fbbe6;
+        background-color: transparent;
+        border: 1px solid #1da5ca;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    a.btn.btn-primary:hover {
+        border: 1px solid #1da5ca;
+        background-color: #1da5ca;
+        color: #fff;
+    }
+    .animatedImg {
+        animation: upDown 2s ease-in-out infinite alternate-reverse both;
+        -webkit-animation: upDown 2s ease-in-out infinite alternate-reverse both;
+    }
+}
+
+// for services part 
+#service {
+    overflow: hidden;
+    a {
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    a.btn.btn-primary {
+        background: transparent;
+        color: #1da5ca;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        transition: 1s;
+    }
+    a.btn.btn-primary:hover {
+        border: 1px solid #1fbbe6;
+        color: #fff;
+        background: #1da5ca;
+    }
+}
+
+// end of services part 
+// start footer  part  👍
+#footer {
+    overflow: hidden;
+    text-align: center;
+    a {
+        text-decoration: none;
+    }
+}
+
+// end of footer part 
+// For animation 👍
+@-webkit-keyframes upDown {
+    0% {
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+}
